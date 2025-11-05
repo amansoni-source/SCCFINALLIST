@@ -34,8 +34,11 @@
     .rules-list{color:var(--muted);margin-block-start:8px;line-height:1.7;font-size:15px;text-align:center;}
     .rules-list li{margin:8px 0;list-style:none;}
     .rules-list li.strong{font-weight:700;color:var(--gold-deep);background:linear-gradient(90deg, rgba(215,60,0,0.06), rgba(215,160,20,0.02));padding:10px;border-radius:8px}
-    .results{inline-size:100%;display:flex;gap:18px;justify-content:center;align-items:flex-start}
-    @media (max-inline-size:880px){ .results{flex-direction:column;align-items:stretch} }
+    .results{inline-size:100%;display:flex;gap:18px;justify-content:center;align-items:flex-start;flex-wrap:wrap;}
+    @media (max-width:880px){
+      .results{flex-direction:column;align-items:stretch}
+      .students{grid-template-columns:1fr!important;}
+    }
     .panel{flex:1;max-inline-size:520px;background:linear-gradient(180deg,#fffefc,#fff7ea);border-radius:12px;border:1px solid var(--accent);box-shadow:0 10px 30px rgba(170,120,10,0.04);overflow:hidden;}
     .panel-head{display:flex;align-items:center;justify-content:space-between;padding:18px 16px;cursor:pointer;gap:12px;background:linear-gradient(90deg, rgba(215,160,20,0.04), rgba(215,160,20,0.01));}
     .panel-title{display:flex;align-items:center;gap:12px}
@@ -47,7 +50,6 @@
     .panel-content{max-block-size:0;overflow:hidden;transition:max-height .6s cubic-bezier(.2,.9,.2,1),padding .4s}
     .panel-content.open{padding:14px 16px 20px}
     .students{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-    @media (max-inline-size:520px){ .students{grid-template-columns:1fr} }
     .student{background:linear-gradient(180deg,#fff,#fffaf2);padding:10px 12px;border-radius:10px;border:1px solid rgba(215,160,20,0.06);display:flex;gap:12px;align-items:center;box-shadow:0 8px 20px rgba(170,120,10,0.03);transition:transform .18s;}
     .student:hover{transform:translateY(-4px)}
     .sid{font-weight:700;color:var(--gold-deep);min-inline-size:32px;text-align:center;}
@@ -70,7 +72,7 @@
       <img src="logo.png" alt="SSIPMT Logo" class="logo" />
       <div class="site-name">SSIPMT Cultural Committee — Selected Members 2025</div>
       <div class="lead">
-        Congratulations to all students selected for the SSIPMT Cultural Committee after a careful interview process.
+        🎉 Congratulations to all students selected for the SSIPMT Cultural Committee after a careful interview process.
         Your dedication, creativity and team spirit have earned you this honor.
         <strong>For those not selected, keep preparing — next year is another opportunity.</strong>
       </div>
@@ -88,11 +90,11 @@
         <li class="strong">⚠️ Any kind of misbehavior, disrespect, or violation of college cultural ethics will result in immediate removal from the committee.</li>
       </ol>
     </section>
-
+   
     <section class="results">
       <article class="panel">
         <div class="panel-head" data-target="qList">
-          <div class="panel-title"><div class="badge">Q</div><div><h3>Q Section — Selected (38)</h3><p>Click to view list</p></div></div>
+          <div class="panel-title"><div class="badge">Q</div><div><h3>Selected Q Section</h3><p>Click to view list</p></div></div>
           <div class="indicator"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M9 8l6 4-6 4V8z" fill="rgba(183,124,16,0.95)"/></svg></div>
         </div>
         <div class="panel-content" id="qList">
@@ -141,7 +143,7 @@
 
       <article class="panel">
         <div class="panel-head" data-target="pList">
-          <div class="panel-title"><div class="badge">P</div><div><h3>P Section — Selected (41)</h3><p>Click to view list</p></div></div>
+          <div class="panel-title"><div class="badge">P</div><div><h3>Selected P Section</h3><p>Click to view list</p></div></div>
           <div class="indicator"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M9 8l6 4-6 4V8z" fill="rgba(183,124,16,0.95)"/></svg></div>
         </div>
         <div class="panel-content" id="pList">
