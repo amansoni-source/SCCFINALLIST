@@ -1,207 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SSIPMT Cultural Committee Selection 2025</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SSIPMT Cultural Committee — Selected Members 2025</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      background: linear-gradient(135deg, #fff6e5, #ffe4b2);
-      color: #333;
-      text-align: center;
+    :root{
+      --bg-a: #fffaf5;
+      --bg-b: #fff3e6;
+      --gold-deep: #b77300;
+      --gold: #d79f00;
+      --ink: #2f2a23;
+      --muted: #6d5a46;
+      --card: #fffdf9;
+      --accent: rgba(215,160,20,0.12);
+      --maxw: 1100px;
     }
-
-    header {
-      padding: 30px 20px;
-      background: linear-gradient(90deg, #ffd700, #ffb347);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-
-    header img {
-      inline-size: 120px;
-      block-size: auto;
-      animation: glow 2s infinite alternate;
-    }
-
-    @keyframes glow {
-      from { filter: drop-shadow(0 0 8px gold); }
-      to { filter: drop-shadow(0 0 20px orange); }
-    }
-
-    h1 {
-      font-size: 2em;
-      color: #a66c00;
-      margin-block-start: 10px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    .message {
-      background: #fffaf0;
-      border: 2px solid #ffd700;
-      border-radius: 12px;
-      margin: 30px auto;
-      padding: 20px;
-      inline-size: 85%;
-      max-inline-size: 700px;
-      box-shadow: 0 5px 15px rgba(255,215,0,0.2);
-    }
-
-    .message h2 {
-      color: #d4af37;
-      margin-block-end: 10px;
-    }
-
-    .rules {
-      background: #fff8dc;
-      border: 1px dashed #b8860b;
-      border-radius: 10px;
-      padding: 15px;
-      inline-size: 80%;
-      margin: 20px auto;
-      text-align: start;
-    }
-
-    .rules ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .rules li::before {
-      content: "⭐ ";
-    }
-
-    .section {
-      background: #fffdf5;
-      border-radius: 15px;
-      margin: 30px auto;
-      inline-size: 90%;
-      max-inline-size: 900px;
-      padding: 20px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-
-    .section h3 {
-      background: linear-gradient(90deg, #ffcc00, #ff9966);
-      color: white;
-      padding: 10px;
-      border-radius: 8px;
-    }
-
-    .student-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin-block-start: 15px;
-    }
-
-    .student {
-      background: #fffaf0;
-      border: 1px solid #ffd580;
-      border-radius: 10px;
-      padding: 8px 12px;
-      box-shadow: 0 2px 5px rgba(255,215,0,0.3);
-      font-weight: 500;
-    }
-
-    footer {
-      margin-block-start: 40px;
-      padding: 20px;
-      background: linear-gradient(90deg, #ffb347, #ffd700);
-      color: #fff;
-      border-block-start: 3px solid #d4af37;
-    }
-
-    .social-links a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .social-links a:hover {
-      color: #fff4b3;
-      text-shadow: 0 0 10px #fff;
-    }
-
-    @media (max-inline-size: 600px) {
-      h1 { font-size: 1.5em; }
-      .student { font-size: 14px; }
-    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{block-size:100%;background:linear-gradient(180deg,var(--bg-a),var(--bg-b));color:var(--ink);font-family:'Poppins',sans-serif}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-inline-size:var(--maxw);margin:26px auto;padding:22px;display:flex;flex-direction:column;align-items:center;gap:20px}
+    .hero{inline-size:100%;background:linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,250,240,0.7));border-radius:14px;padding:28px 22px;box-shadow:0 12px 34px rgba(170,120,10,0.06);text-align:center;border:1px solid var(--accent);}
+    .logo{inline-size:120px;block-size:120px;border-radius:12px;object-fit:contain;border:1px solid rgba(215,160,20,0.08);padding:8px;background:#fff;box-shadow:0 10px 30px rgba(183,124,16,0.08)}
+    .site-name{font-family:'Playfair Display',serif;color:var(--gold-deep);font-size:28px;margin-block-start:12px}
+    .lead{color:var(--muted);max-inline-size:880px;margin:14px auto 0;line-height:1.6;font-size:15px;text-align:center;}
+    .divider { inline-size:160px;block-size:3px;border-radius:6px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:18px auto 8px }
+    .rules{inline-size:100%;text-align:center;background:var(--card);border-radius:12px;padding:20px 18px;border:1px solid var(--accent);box-shadow:0 10px 28px rgba(170,120,10,0.045);}
+    .rules h2{font-family:'Playfair Display',serif;color:var(--gold-deep);font-size:20px;margin-block-end:8px}
+    .rules-list{color:var(--muted);margin-block-start:8px;line-height:1.7;font-size:15px;text-align:center;}
+    .rules-list li{margin:8px 0;list-style:none;}
+    .rules-list li.strong{font-weight:700;color:var(--gold-deep);background:linear-gradient(90deg, rgba(215,60,0,0.06), rgba(215,160,20,0.02));padding:10px;border-radius:8px}
+    .results{inline-size:100%;display:flex;gap:18px;justify-content:center;align-items:flex-start}
+    @media (max-inline-size:880px){ .results{flex-direction:column;align-items:stretch} }
+    .panel{flex:1;max-inline-size:520px;background:linear-gradient(180deg,#fffefc,#fff7ea);border-radius:12px;border:1px solid var(--accent);box-shadow:0 10px 30px rgba(170,120,10,0.04);overflow:hidden;}
+    .panel-head{display:flex;align-items:center;justify-content:space-between;padding:18px 16px;cursor:pointer;gap:12px;background:linear-gradient(90deg, rgba(215,160,20,0.04), rgba(215,160,20,0.01));}
+    .panel-title{display:flex;align-items:center;gap:12px}
+    .badge{background:linear-gradient(180deg,var(--gold),var(--gold-deep));color:white;padding:8px 14px;border-radius:999px;font-weight:700;font-size:13px;box-shadow:0 8px 18px rgba(183,124,16,0.16)}
+    .panel-head h3{font-family:'Playfair Display',serif;color:var(--gold-deep);margin:0;font-size:18px}
+    .panel-head p{margin:0;color:var(--muted);font-size:13px}
+    .indicator{inline-size:44px;block-size:44px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(180deg,rgba(255,255,255,0.85),rgba(255,255,255,0.95));border:1px solid rgba(215,160,20,0.06)}
+    .indicator svg{transition:transform .45s cubic-bezier(.2,.9,.2,1)}
+    .panel-content{max-block-size:0;overflow:hidden;transition:max-height .6s cubic-bezier(.2,.9,.2,1),padding .4s}
+    .panel-content.open{padding:14px 16px 20px}
+    .students{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    @media (max-inline-size:520px){ .students{grid-template-columns:1fr} }
+    .student{background:linear-gradient(180deg,#fff,#fffaf2);padding:10px 12px;border-radius:10px;border:1px solid rgba(215,160,20,0.06);display:flex;gap:12px;align-items:center;box-shadow:0 8px 20px rgba(170,120,10,0.03);transition:transform .18s;}
+    .student:hover{transform:translateY(-4px)}
+    .sid{font-weight:700;color:var(--gold-deep);min-inline-size:32px;text-align:center;}
+    .sname{color:var(--ink);font-size:14px}
+    .closing{text-align:center;margin-block-start:12px}
+    .closing .txt{color:var(--muted);max-inline-size:900px;margin:12px auto;line-height:1.6;font-size:15px}
+    .closing .mandatory{margin-block-start:10px;font-weight:700;color:var(--gold-deep);font-size:15px}
+    footer{inline-size:100%;margin-block-start:18px;padding:18px;border-block-start:1px solid var(--accent);display:flex;flex-direction:column;align-items:center;gap:10px}
+    .footer-logo{inline-size:64px;block-size:64px;border-radius:10px;border:1px solid rgba(215,160,20,0.06);padding:6px;background:#fff;object-fit:contain}
+    .footer-tag{color:var(--muted);font-size:13px}
+    .socials{display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:center;}
+    .social{display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0.8),rgba(255,255,255,0.95));border:1px solid rgba(215,160,20,0.06)}
+    .social img{inline-size:22px;block-size:22px}
+    .social span{font-weight:600;color:var(--muted);font-size:14px}
   </style>
 </head>
-
 <body>
+  <div class="wrap">
+    <header class="hero">
+      <img src="logo.png" alt="SSIPMT Logo" class="logo" />
+      <div class="site-name">SSIPMT Cultural Committee — Selected Members 2025</div>
+      <div class="lead">
+        Congratulations to all students selected for the SSIPMT Cultural Committee after a careful interview process.
+        Your dedication, creativity and team spirit have earned you this honor.
+        <strong>For those not selected, keep preparing — next year is another opportunity.</strong>
+      </div>
+    </header>
 
-  <header>
-    <img src="logo.png" alt="SSIPMT Logo" />
-    <h1>SSIPMT Cultural Committee 2025</h1>
-  </header>
+    <div class="divider"></div>
 
-  <div class="message">
-    <h2>🎉 Congratulations to All Selected Students! 🎉</h2>
-    <p>
-      Your creativity, enthusiasm, and dedication have earned you a spot in the
-      <b>SSIPMT Cultural Committee</b>. We’re thrilled to have you on board!
-    </p>
-    <p style="color:#a0522d;">
-      For those who weren’t selected this time — don’t lose heart 💫  
-      Your participation means a lot. Keep showcasing your talent — more opportunities await!
-    </p>
-  </div>
+    <section class="rules">
+      <h2>Rules &amp; Guidelines</h2>
+      <ol class="rules-list">
+        <li>Attend every scheduled meeting, rehearsal and assigned event on time.</li>
+        <li>Maintain professional conduct, teamwork and punctual communication.</li>
+        <li>Respect committee coordinators, faculty and fellow members at all times.</li>
+        <li>Active participation in cultural events and duties is mandatory.</li>
+        <li class="strong">⚠️ Any kind of misbehavior, disrespect, or violation of college cultural ethics will result in immediate removal from the committee.</li>
+      </ol>
+    </section>
 
-  <div class="rules">
-    <h3>📜 Rules & Guidelines</h3>
-    <ul>
-      <li>All members must attend scheduled meetings and rehearsals on time.</li>
-      <li>Maintain discipline and represent SSIPMT with pride and respect.</li>
-      <li>Participation in all cultural events is mandatory unless excused officially.</li>
-      <li>Follow the committee coordinators’ instructions during events.</li>
-      <li>Creativity, teamwork, and positive attitude are key!</li>
-    </ul>
-  </div>
+    <section class="results">
+      <article class="panel">
+        <div class="panel-head" data-target="qList">
+          <div class="panel-title"><div class="badge">Q</div><div><h3>Q Section — Selected (38)</h3><p>Click to view list</p></div></div>
+          <div class="indicator"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M9 8l6 4-6 4V8z" fill="rgba(183,124,16,0.95)"/></svg></div>
+        </div>
+        <div class="panel-content" id="qList">
+          <div class="students">
+            <div class="student"><div class="sid">1</div><div class="sname">NEHA SAHU</div></div>
+            <div class="student"><div class="sid">2</div><div class="sname">PRATHAM GUPTA</div></div>
+            <div class="student"><div class="sid">3</div><div class="sname">TANISH MISHRA</div></div>
+            <div class="student"><div class="sid">4</div><div class="sname">APOORPA</div></div>
+            <div class="student"><div class="sid">5</div><div class="sname">KASAF TAREKH</div></div>
+            <div class="student"><div class="sid">6</div><div class="sname">KASHISH SHARIF</div></div>
+            <div class="student"><div class="sid">7</div><div class="sname">RIYA SONANT</div></div>
+            <div class="student"><div class="sid">8</div><div class="sname">DEEKSHA BANCHOR</div></div>
+            <div class="student"><div class="sid">9</div><div class="sname">ADTIYA KUMAR ROY</div></div>
+            <div class="student"><div class="sid">10</div><div class="sname">CHINMAY ANAND</div></div>
+            <div class="student"><div class="sid">11</div><div class="sname">PRIYATE SHIVANI</div></div>
+            <div class="student"><div class="sid">12</div><div class="sname">KRITI SINGH</div></div>
+            <div class="student"><div class="sid">13</div><div class="sname">SAMRIDDHI DUBEY</div></div>
+            <div class="student"><div class="sid">14</div><div class="sname">SHREYA JHA</div></div>
+            <div class="student"><div class="sid">15</div><div class="sname">K JANIT KUMAR</div></div>
+            <div class="student"><div class="sid">16</div><div class="sname">PREM S PATIL</div></div>
+            <div class="student"><div class="sid">17</div><div class="sname">MANSHI NANWANI</div></div>
+            <div class="student"><div class="sid">18</div><div class="sname">DARSHANA BUDHWANI</div></div>
+            <div class="student"><div class="sid">19</div><div class="sname">DEEKSHA SAHU</div></div>
+            <div class="student"><div class="sid">20</div><div class="sname">KOMYA CHANDRAKAR</div></div>
+            <div class="student"><div class="sid">21</div><div class="sname">JOTI MANGLANI</div></div>
+            <div class="student"><div class="sid">22</div><div class="sname">MIMANSHU MISHRA</div></div>
+            <div class="student"><div class="sid">23</div><div class="sname">RITIKA JAISWAL</div></div>
+            <div class="student"><div class="sid">24</div><div class="sname">SUPARNA DAS</div></div>
+            <div class="student"><div class="sid">25</div><div class="sname">EKLAVYA KHATRI</div></div>
+            <div class="student"><div class="sid">26</div><div class="sname">REHAN RAZA</div></div>
+            <div class="student"><div class="sid">27</div><div class="sname">KANISHK MISHRA</div></div>
+            <div class="student"><div class="sid">28</div><div class="sname">MAYUK MANDAL</div></div>
+            <div class="student"><div class="sid">29</div><div class="sname">AVANI SARSWAT</div></div>
+            <div class="student"><div class="sid">30</div><div class="sname">VAIBHAVI SHARMA</div></div>
+            <div class="student"><div class="sid">31</div><div class="sname">ALFIYA AFROZ</div></div>
+            <div class="student"><div class="sid">32</div><div class="sname">JENNISHA DAYANI</div></div>
+            <div class="student"><div class="sid">33</div><div class="sname">RITIKA BHAGAV</div></div>
+            <div class="student"><div class="sid">34</div><div class="sname">SHAURYA CHANDRAKAR</div></div>
+            <div class="student"><div class="sid">35</div><div class="sname">PRIYAL KESRWANI</div></div>
+            <div class="student"><div class="sid">36</div><div class="sname">ASMITH KHARE</div></div>
+            <div class="student"><div class="sid">37</div><div class="sname">SUBHI SHUKLA</div></div>
+            <div class="student"><div class="sid">38</div><div class="sname">ANSH AGRAWAL</div></div>
+          </div>
+        </div>
+      </article>
 
-  <!-- Q Section -->
-  <div class="section">
-    <h3>✨ Q Section Selected Students ✨</h3>
-    <div class="student-list">
-      <!-- Add your Q section names here -->
-      <div class="student">1. Aayushi Sharma</div>
-      <div class="student">2. Aditya Verma</div>
-      <div class="student">3. Ananya Singh</div>
-      <div class="student">4. Bhavesh Gupta</div>
-      <div class="student">...</div>
-      <!-- Add till all Q section students -->
+      <article class="panel">
+        <div class="panel-head" data-target="pList">
+          <div class="panel-title"><div class="badge">P</div><div><h3>P Section — Selected (41)</h3><p>Click to view list</p></div></div>
+          <div class="indicator"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M9 8l6 4-6 4V8z" fill="rgba(183,124,16,0.95)"/></svg></div>
+        </div>
+        <div class="panel-content" id="pList">
+          <div class="students">
+            <div class="student"><div class="sid">1</div><div class="sname">JONSHAN LAHRE</div></div>
+            <div class="student"><div class="sid">2</div><div class="sname">DEEPALI CHANDRA</div></div>
+            <div class="student"><div class="sid">3</div><div class="sname">ADITYA SONI</div></div>
+            <div class="student"><div class="sid">4</div><div class="sname">DEEPANSH NAMDEV</div></div>
+            <div class="student"><div class="sid">5</div><div class="sname">TEJASWINI KAIWARTYA</div></div>
+            <div class="student"><div class="sid">6</div><div class="sname">MOHAMAD AYAN</div></div>
+            <div class="student"><div class="sid">7</div><div class="sname">MANJIT BISWAS</div></div>
+            <div class="student"><div class="sid">8</div><div class="sname">AAYUSH SATPATHI</div></div>
+            <div class="student"><div class="sid">9</div><div class="sname">MD ZAID KHAN</div></div>
+                        <div class="student"><div class="sid">10</div><div class="sname">M VINAY</div></div>
+            <div class="student"><div class="sid">11</div><div class="sname">SWATI SHARMA</div></div>
+            <div class="student"><div class="sid">12</div><div class="sname">ISHITA CHOUKSEY</div></div>
+            <div class="student"><div class="sid">13</div><div class="sname">SHIVAM KUMAR JHA</div></div>
+            <div class="student"><div class="sid">14</div><div class="sname">KARAN AGRAWAL</div></div>
+            <div class="student"><div class="sid">15</div><div class="sname">YASH SAHU</div></div>
+            <div class="student"><div class="sid">16</div><div class="sname">ABHISHEK PATEL</div></div>
+            <div class="student"><div class="sid">17</div><div class="sname">GAURAV KUMAR</div></div>
+            <div class="student"><div class="sid">18</div><div class="sname">MAUSAMI THAKUR</div></div>
+            <div class="student"><div class="sid">19</div><div class="sname">POONVI SONKAR</div></div>
+            <div class="student"><div class="sid">20</div><div class="sname">ABHINAV SHIRVASTAV</div></div>
+            <div class="student"><div class="sid">21</div><div class="sname">AASHI MISHRA</div></div>
+            <div class="student"><div class="sid">22</div><div class="sname">ROSHITA MEHRA</div></div>
+            <div class="student"><div class="sid">23</div><div class="sname">SOUMYA SONTAKE</div></div>
+            <div class="student"><div class="sid">24</div><div class="sname">ABDUL AYAN</div></div>
+            <div class="student"><div class="sid">25</div><div class="sname">RIYA SILARIYA</div></div>
+            <div class="student"><div class="sid">26</div><div class="sname">SONAM CHOUDHARY</div></div>
+            <div class="student"><div class="sid">27</div><div class="sname">MANISHA</div></div>
+            <div class="student"><div class="sid">28</div><div class="sname">SHREYA MISHRA</div></div>
+            <div class="student"><div class="sid">29</div><div class="sname">GAUTAMI PATEL</div></div>
+            <div class="student"><div class="sid">30</div><div class="sname">AARUSH SAHU</div></div>
+            <div class="student"><div class="sid">31</div><div class="sname">KHUSHBOO RAHANDE</div></div>
+            <div class="student"><div class="sid">32</div><div class="sname">AALMIN SIDDIQUI</div></div>
+            <div class="student"><div class="sid">33</div><div class="sname">KHUSHI SONI</div></div>
+            <div class="student"><div class="sid">34</div><div class="sname">ANVESHA SHUKLA</div></div>
+            <div class="student"><div class="sid">35</div><div class="sname">G AYUSH</div></div>
+            <div class="student"><div class="sid">36</div><div class="sname">JYOTI GUPTA</div></div>
+            <div class="student"><div class="sid">37</div><div class="sname">NOOTAN BELSAR</div></div>
+            <div class="student"><div class="sid">38</div><div class="sname">ANANYA SHUKLA</div></div>
+            <div class="student"><div class="sid">39</div><div class="sname">SATYAM VERMA</div></div>
+            <div class="student"><div class="sid">40</div><div class="sname">TRISHA DEWANGAN</div></div>
+            <div class="student"><div class="sid">41</div><div class="sname">KANHA PANERIYA</div></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="closing">
+      <div class="txt">
+        <strong>Thank You!</strong>  
+        We’re excited to begin this cultural journey together filled with creativity, joy and collaboration.  
+        Wishing you all an energetic year ahead full of successful events, new ideas, and teamwork.
+      </div>
+      <div class="mandatory">
+        All selected members must join the official social media pages for updates and coordination.
+      </div>
     </div>
+
+    <footer>
+      <img src="logo.png" class="footer-logo" alt="SSIPMT Logo" />
+      <div class="footer-tag">Follow &amp; Stay Connected</div>
+      <div class="socials">
+        <a href="https://www.instagram.com/ssipmt_cultural" class="social" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"><span>@ssipmt_cultural</span>
+        </a>
+        <a href="https://www.facebook.com/ssipmt_cultural" class="social" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"><span>@ssipmt_cultural</span>
+        </a>
+        <a href="https://www.instagram.com/agresita_ssipmt" class="social" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"><span>@agresita_ssipmt</span>
+        </a>
+      </div>
+    </footer>
   </div>
 
-  <!-- P Section -->
-  <div class="section">
-    <h3>🌸 P Section Selected Students 🌸</h3>
-    <div class="student-list">
-      <!-- Add your P section names here -->
-      <div class="student">1. Priya Soni</div>
-      <div class="student">2. Pankaj Patel</div>
-      <div class="student">3. Preeti Tiwari</div>
-      <div class="student">4. Prashant Kumar</div>
-      <div class="student">...</div>
-      <!-- Add till all P section students -->
-    </div>
-  </div>
-
-  <footer>
-    <h4>Follow Us for Updates</h4>
-    <div class="social-links">
-      <a href="https://instagram.com/ssipmt_cultural" target="_blank">Instagram Page 1</a> |
-      <a href="https://instagram.com/ssipmt_college" target="_blank">Instagram Page 2</a> |
-      <a href="https://facebook.com/ssipmtofficial" target="_blank">Facebook</a>
-    </div>
-    <p style="margin-block-start:10px;font-size:0.9em;">© 2025 SSIPMT Cultural Committee</p>
-  </footer>
-
+  <script>
+    document.querySelectorAll('.panel-head').forEach(head=>{
+      head.addEventListener('click',()=>{
+        const targetId = head.dataset.target;
+        const panel = document.getElementById(targetId);
+        const svg = head.querySelector('svg');
+        panel.classList.toggle('open');
+        if(panel.classList.contains('open')){
+          panel.style.maxHeight = panel.scrollHeight + 'px';
+          svg.style.transform = 'rotate(90deg)';
+        } else {
+          panel.style.maxHeight = '0px';
+          svg.style.transform = 'rotate(0deg)';
+        }
+      });
+    });
+  </script>
 </body>
 </html>
+
